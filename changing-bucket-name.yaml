@@ -1,0 +1,10 @@
+---
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: changing-sample-name 
+
+# if we change the bucket name after creating a bucket with AWS cloudformation template, then the entire bucket will be deleted and will be replaced with the new bucket name
+# that is a new bucket will be created with the name given  
